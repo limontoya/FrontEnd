@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Welcome!</h1>
+    <div id="something">
+      foo: bar
+      bar: buzz
+    </div>
+    <div class="info">something else</div>
+    <script>
+      var elem = document.getElementById ('something');
+      elem.style.color = 'cyan';
+
+      var elems = document.getElementsByClassName('info');
+      console.log(elems[0].textContent);
+
+      for(var elem of elems){
+        elem.style.color = 'green';
+      }
+    </script>
+    <script>document.write('hello')</script>
+    <script src="script.js"></script>
+  </body>
+</html>
